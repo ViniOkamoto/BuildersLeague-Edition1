@@ -3,34 +3,34 @@ import { TopicShort } from '@/types/topic'
 export const mockTopics: TopicShort[] = [
   {
     id: '670300d48a63d8bfe235b6ba',
-    title: 'Introduction to React',
+    title: 'Reconciliation Historical Contexts',
     description:
-      'Learn the basics of React, including components, props, and state.',
+      'Explores the key historical events and factors that have shaped the current landscape of reconciliation efforts.',
     contentsQuantity: 10,
-    percentage: 75,
+    progress: 100,
   },
   {
-    id: '2',
-    title: 'Advanced JavaScript Concepts',
+    id: '670449439fac43a78363ac46',
+    title: 'Empathy in Reconciliation',
     description:
-      'Dive deep into closures, prototypes, and asynchronous programming.',
+      'Highlights the role of empathy in fostering understanding and healing between divided communities during reconciliation.',
     contentsQuantity: 15,
-    percentage: 60,
+    progress: 80,
   },
   {
-    id: '3',
-    title: 'CSS Grid and Flexbox',
+    id: '670459c49fac43a78363adff',
+    title: 'Barriers to Reconciliation',
     description:
-      'Master modern CSS layout techniques for responsive web design.',
+      'Identifies the challenges and obstacles that hinder the process of reconciliation between different groups.',
     contentsQuantity: 8,
-    percentage: 90,
+    progress: 10,
   },
   {
-    id: '4',
-    title: 'TypeScript Fundamentals',
+    id: '670459e49fac43a78363ae1f',
+    title: 'Building Trust',
     description:
-      'Get started with TypeScript and learn how to use static typing in your projects.',
+      'Examines the impact of trauma on individuals and communities and its influence on the reconciliation process.',
     contentsQuantity: 12,
-    percentage: 40,
+    progress: 0,
   },
 ]

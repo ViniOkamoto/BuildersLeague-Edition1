@@ -3,8 +3,11 @@ import { Progress } from '@/components/ui/progress'
 import { mockTopics } from '@/mocks/topic'
 import Link from 'next/link'
 
-export default function Page() {
+export default async function Page() {
   const topics = mockTopics
+  const response = await fetch('http://localhost:3000/api/topics')
+  const data = await response.json()
+  console.log(data)
 
   return (
     <div className="container mx-auto p-4">
@@ -23,9 +26,9 @@ export default function Page() {
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
                     <span>Contents: {topic.contentsQuantity}</span>
-                    <span>{topic.percentage}% Complete</span>
+                    <span>{topic.progress}% Complete</span>
                   </div>
-                  <Progress value={topic.percentage} className="w-full" />
+                  <Progress value={topic.progress} className="w-full" />
                 </div>
               </CardContent>
             </Card>
